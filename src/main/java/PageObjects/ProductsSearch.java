@@ -62,4 +62,9 @@ public class ProductsSearch extends AbstractComponents {
         System.out.println("Actual product count is " +ProductsCount);
         return ProductsCount;
     }
+    public void product (){
+     WebElement product = PCAcNum.stream().filter(PCAcNum->
+                PCAcNum.findElement(By.cssSelector("span")).getText().equals("Rosada Textured Outdoor Pillow Cover")).findFirst().orElse(null);
+
+    }
 }
